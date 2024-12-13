@@ -7,6 +7,7 @@ import { AccountPage } from './pages/AccountPage';
 import { AuthProvider } from './contexts/AuthContext';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { useAuth } from './contexts/AuthContext';
+import { useLanguage } from './hooks/useLanguage';
 
 function PrivateRoute({ children }: { children: React.ReactNode }) {
   const { user } = useAuth();
@@ -56,3 +57,5 @@ function App() {
     </BrowserRouter>
   );
 }
+
+export default App;
